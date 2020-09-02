@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <title>Projeto Web 1 - Login</title>
+</head>
+
+<body>
+    <div class="fundoLogin">
+        <div class="imagemLogin">
+            <img src="./img/livros_login.png" />
+        </div>
+
+        <div class="formLoginCadastro">
+            <form id="formLogin" action="index.html">
+                <div class="listaLogin">
+                    <h1>Fazer Login</h1>
+                    <p>
+                        <label for="login">Login: </label>
+                        <input type="text" id="login" name="login" required autofocus><br>
+                    </p>
+                    <p>
+                        <label for="senha">Senha: </label>
+                        <input type="password" id="senha" name="senha" required minlength="4"><br>
+                    </p>
+                    <p>
+                        <input type="submit" id="btnSubmitLogin" value="Entrar">
+                    </p>
+                </div>
+            </form>
+
+            <form id="formCadastro">
+                <div class="listaCadastro">
+                    <h1>Cadastre-se</h1>
+                    <p>
+                        <label for="loginCadastro">Login: </label>
+                        <input type="text" id="loginCadastro" name="loginCadastro" required autofocus>
+                    </p>
+                    <p>
+                        <label for="emailCadastro">E-mail:</label>
+                        <input type="email" id="emailCadastro" name="emailCadastro" required>
+                    </p>
+                    <p>
+                        <label for="senhaCadastro">Senha:</label>
+                        <input type="password" id="senhaCadastro" name="senhaCadastro" required minlength="4">
+                    </p>
+                    <p>
+                        <input type="submit" id="btnSubmitCadastro" value="Cadastrar">
+                    </p>
+                </div>
+            </form>
+
+            <div class="botoesLoginCadastrar">
+                <ul>
+                    <li>
+                        <button id="btnLogin">Login</button>
+                    </li>
+                    <li>
+                        <button id="btnCadastrar">Cadastre-se</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript" src="./js/login.js"></script>
+
+</html>

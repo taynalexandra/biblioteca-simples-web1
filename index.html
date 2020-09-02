@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <title>Projeto Web 1 - Index</title>
+</head>
+
+<body>
+    <div class="imagemIndex">
+        <img src="./img/livros_index.png" />
+    </div>
+
+    <div class="menu">
+        <div class="botoesCadastrarListar">
+            <button id="btnCadastrarLivro" onclick="location.reload()">Cadastrar Livro</button>
+            <button id="btnListarLivros" onclick="this.disabled = true">Listar Livros</button>
+        </div>
+    </div>
+
+    <div class="cadastro">
+        <form id="formCadastroLivro">
+            <div class="cadastroLivros">
+                <h1>Novo Livro</h1>
+                <p>
+                    <label for="titulo">Título: </label>
+                    <input type="text" id="titulo" name="titulo" required autofocus>
+                </p>
+                <p>
+                    <label for="categoria">Categoria: </label>
+                    <select id="categoria" name="categoria">
+                        <option value="Biografias">Biografias</option>
+                        <option value="Contos">Contos</option>
+                        <option value="Ficcao Cientifica">Ficção Científica</option>
+                        <option value="Folclore">Folclore</option>
+                        <option value="Poesia">Poesia</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="ano">Ano: </label>
+                    <input type="number" id="ano" name="ano" required>
+                </p>
+                <p>
+                    <label for="autor">Autor: </label>
+                    <input type="text" id="autor" name="autor" required>
+                </p>
+                <p>
+                    <input type="submit" id="submitFormCadastrarLivro" value="Cadastrar Livro">
+                </p>
+            </div>
+        </form>
+    </div>
+
+    <div class="lista" id="listarLivros">
+        <h1>Livros</h1>
+        <ul id="listaDeLivros">
+
+        </ul>
+    </div>
+</body>
+
+<script type="text/javascript" src="./js/index.js"></script>
+
+</html>
